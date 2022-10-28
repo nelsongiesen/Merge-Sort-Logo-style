@@ -14,6 +14,7 @@ The constrctor add-to-end adds an item to the end of a list.
 The constructor combine-lists combines two lists into one list.
 The question empty? asks if a list is empty.
 The question exactly-one? asks if there is exactly one item in a list.
+The question less-than-two? asks if there are less than two items in a list.
 The question less-than? asks if a number is less than another number.
 The question more-than? asks if a number is more than another number.
 The word empty-list represents the empty list.
