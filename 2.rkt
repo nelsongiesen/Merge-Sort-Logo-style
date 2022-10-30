@@ -119,12 +119,12 @@
 
 
 (define each-item-gets-own-list
-  (lambda (ls)
+  (lambda (orig-ls)
     (letrec ((helper (lambda (ls result)
                        (if (empty? ls)
                            result
                            (helper (remove-first ls) (add-to-end result (listify (first ls))))))))
-      (helper ls empty-list))))
+      (helper orig-ls empty-list))))
 
 
 (define merge-sort
