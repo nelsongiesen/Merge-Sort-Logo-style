@@ -1,7 +1,7 @@
 # Merge-Sort-Logo-style
 A funny toy beginners can learn to build
 
-A lot of people love the Merge Sort - because it is funny.
+A lot of people love the Merge Sort - because it's funny.
 Seymour Papert and Brian Harvey wrote fun books about the Logo dialect of List Processing.
 The Logo dialect uses language in a similar way to natural English.
 The selector first-item chooses the first item of a list.
