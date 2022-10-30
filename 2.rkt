@@ -78,7 +78,7 @@
 
 
 (define merge-two
-  (lambda (list-1 list-2)
+  (lambda (list-a list-b)
     (letrec ((helper (lambda (list-1 list-2 result)
                        (if (empty? list-1)
                            (combine result list-2)
@@ -89,7 +89,7 @@
                                  (if (less-than? val-1 val-2)
                                      (helper (remove-first list-1) list-2 (add-to-end result val-1))
                                      (helper list-1 (remove-first list-2) (add-to-end result val-2)))))))))
-      (helper list-1 list-2 empty-list))))
+      (helper list-a list-b empty-list))))
 
 (define mergetwo merge-two)
 (define two-merge merge-two)
@@ -99,11 +99,11 @@
 
 (define feeder
   (lambda (list-of-lists)
-    (letrec ((helper (lambda (list-of-lists result)
-                       (if (less-than-two? list-of-lists)
-                           (combine result list-of-lists)
-                           (helper (remove-first (remove-first list-of-lists))
-                                   (add-to-end result (merge-two (first list-of-lists) (second list-of-lists))))))))
+    (letrec ((helper (lambda (l-of-l result)
+                       (if (less-than-two? l-of-l)
+                           (combine result l-of-l
+                           (helper (remove-first (remove-first l-of-l))
+                                   (add-to-end result (merge-two (first l-of-l) (second l-of-l))))))))
         (helper list-of-lists empty-list))))
 
 (define feder feeder)
