@@ -11,6 +11,7 @@ The selector without-last-item returns the list without the last item.
 The constructor add-to-beginning adds an item to the beginning of a list.
 The constrctor add-to-end adds an item to the end of a list.
 The constructor combine-lists combines two lists into one list.
+The constructor listify takes any number of items and turns them into a list.
 The question empty? asks if a list is empty.
 The question less-than? asks if a number is less than another number.
 The question more-than? asks if a number is more than another number.
