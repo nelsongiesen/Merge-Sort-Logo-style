@@ -16,3 +16,9 @@ The question empty? asks if a list is empty.
 The question less-than? asks if a number is less than another number.
 The question more-than? asks if a number is more than another number.
 The word empty-list represents the empty list.
+
+Our programs use four magic words:
+Define creates programs and allows us to name them.
+Lambda creates inputs and allows us to name them.
+Let creates local variables and allows us to name them.
+Letrec creates helper programs and allows us to name them.
